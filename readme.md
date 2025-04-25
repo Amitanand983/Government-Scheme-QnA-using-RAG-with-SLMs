@@ -55,7 +55,7 @@ This project is a **Retrieval-Augmented Generation (RAG)** based intelligent QnA
 
 ### 📁 Clone the Repository
 ```bash
-git clone https://github.com/theUtkarshRaj/Government-Scheme-QnA-using-RAG
+git clone (https://github.com/Amitanand983/Government-Scheme-QnA-using-RAG-with-SLMs)
 cd government-scheme-rag-qa
 ```
 
