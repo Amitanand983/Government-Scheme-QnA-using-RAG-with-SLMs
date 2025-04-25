@@ -4,7 +4,7 @@
     Government Scheme QnA using RAG
     </h1>
     <p>
-    RGIPT Hackathon Project • Powered by Hugging Face, LangChain & Streamlit
+    Personal Project • Powered by Hugging Face, LangChain & Streamlit
     </p>
 
 <a href="https://www.python.org/downloads/release/python-3110/">
@@ -120,17 +120,17 @@ After launching, enter your **Hugging Face API key** in the Streamlit sidebar.
 
 ---
 
-## 📽️ Demo Video
+<!-- ## 📽️ Demo Video
 
 [Click here to watch demo](https://drive.google.com/file/d/1R_av1NY1NSAGPCzrlX_lEw7_n7HkPl-m/view?usp=sharing)
 
----
+--- -->
 
 ## 👥 Team
 
 | Name            | Role                  |
 |----------------|-----------------------|
-| [Utkarsh Raj](https://github.com/theUtkarshRaj) | Complete Development |
+| [Amit Anand](https://github.com/amitanand983) | Complete Project |
 
 ---
 
