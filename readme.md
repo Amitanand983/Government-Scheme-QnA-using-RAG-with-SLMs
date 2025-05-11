@@ -33,7 +33,7 @@ This project is a **Retrieval-Augmented Generation (RAG)** based intelligent QnA
 ## ✨ Key Features
 
 - 🔍 **Semantic Search** using FAISS + MiniLM embeddings  
-- 🧠 **LLM-powered Answers** with `google/flan-t5-small`
+- 🧠 **LLM-powered Answers** with `google/gemini-1.5-flash`
 - 📄 Supports `.json` and `.txt` based knowledge bases
 - 🌐 **Streamlit Interface** for interactive Q&A
 - 🔑 Hugging Face **API Key authentication** for secure model inference
@@ -55,7 +55,7 @@ This project is a **Retrieval-Augmented Generation (RAG)** based intelligent QnA
 
 ### 📁 Clone the Repository
 ```bash
-git clone https://github.com/Amitanand983/Government-Scheme-QnA-using-RAG-with-SLMs
+git clone https://github.com/theUtkarshRaj/Government-Scheme-QnA-using-RAG
 cd government-scheme-rag-qa
 ```
 
@@ -105,10 +105,15 @@ After launching, enter your **Hugging Face API key** in the Streamlit sidebar.
 
 ## 🧠 Models Used
 
-| Component        | Model Name                                                 | Description                                 |
-|------------------|------------------------------------------------------------|---------------------------------------------|
-| Embeddings       | [`all-MiniLM-L6-v2`](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) | Lightweight sentence transformer for retrieval |
-| Language Model   | [`flan-t5-small`](https://api-inference.huggingface.co/models/google/flan-t5-small) | Instruction-tuned open LLM for generation |
+| Component        | Model Name(s) & Provider                                                                 | Description                                 |
+|------------------|----------------------------------------------------------------------------------------|---------------------------------------------|
+| Embeddings       | [`all-MiniLM-L6-v2`](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)     | Lightweight sentence transformer for retrieval |
+| Language Model   | **Primary (Recommended):**<br> [`Gemini Flash`](https://aistudio.google.com/app/apikey) (Google AI Studio API, free tier available)<br><br>**Alternative (API):**<br> [`bigscience/bloomz-560m`](https://huggingface.co/bigscience/bloomz-560m) (Hugging Face Inference API, may require paid account)<br><br>**Alternative (Local):**<br> Any supported text2text-generation model via Hugging Face Transformers (e.g., Flan-T5, Llama, Gemma, etc.) | LLM for answer generation. Gemini Flash is recommended for free, reliable API access. Most Hugging Face models are not available for free API use as of 2024. |
+
+- **Note:**
+    - Gemini Flash (Google) is the recommended free API for answer generation. You need a Google AI Studio API key.
+    - Most Hugging Face models (e.g., flan-t5-small, mt0-small, bloomz-560m) are no longer available for free API inference. If you use Hugging Face, check model availability and your account limits.
+    - For local inference, you can use any model supported by Hugging Face Transformers, but you need sufficient hardware resources.
 
 ---
 
